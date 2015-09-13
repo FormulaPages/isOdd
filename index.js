@@ -8,14 +8,14 @@
             exports: {}
         };
         factory(mod.exports, mod);
-        global.index = mod.exports;
+        global.ISODD = mod.exports;
     }
 })(this, function (exports, module) {
     "use strict";
 
-    module.exports = isEven;
+    module.exports = isOdd;
 
-    function isEven(value) {
+    function isOdd(value) {
         return Math.floor(Math.abs(value)) & 1 ? true : false;
     }
 });
